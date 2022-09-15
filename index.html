@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker App</title>
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js"></script>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker App</title>
-    <link rel="stylesheet" href="styles.css">
+    <header id="WebsiteTitle">
+        <h1>Expense Tracker</h1>
+    </header>
 </head>
 
 <body>
-    <header>
-        <div id="name">Expensive Tracker</div>
-    </header>
     <div>
-        <textarea name="Do Item" id="" cols="30" rows="10"> </textarea>
-        <button>Submit</button>
-        <button>Clear List</button>  
+        <div class="inputBlock1">
+            <h2>
+                Add A New Item:
+            </h2>
+            <div>
+                Name:
+                <textarea name="Expenses" id="EXPENSE_AREA" cols="30" rows="1">Where was the expense made?</textarea>
+            </div>
+        </div>
+        <div class="inputBlock2">
+            Date:
+            <textarea name="Date" id="DATE_AREA" cols="30" rows="1">mm/dd/yyyy</textarea>
+            Amount:
+            <textarea name="Amount" id="AMOUNT_AREA" cols="30" rows="1"></textarea>
+        </div>
+        <div>
+            <button class="expenseBtn">Add Expense</button>
+        </div>
+        <div class="expenseTable">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </table>
+        </div>
     </div>
+
 </body>
+<footer> 
+
+</footer>
 </html>
