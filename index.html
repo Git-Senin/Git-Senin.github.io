@@ -21,27 +21,45 @@
             <h2>
                 Add A New Item:
             </h2>
-            <div>
+            <div>                
+                <!--Where was the expense made?-->
                 Name:
-                <textarea name="Expenses" id="EXPENSE_AREA" cols="30" rows="1">Where was the expense made?</textarea>
+                <input type="Name">
             </div>
         </div>
         <div class="inputBlock2">
             Date:
-            <textarea name="Date" id="DATE_AREA" cols="30" rows="1">mm/dd/yyyy</textarea>
+            <input type="date">
             Amount:
-            <textarea name="Amount" id="AMOUNT_AREA" cols="30" rows="1"></textarea>
+            <input type="amount">
         </div>
         <div>
             <button class="expenseBtn">Add Expense</button>
         </div>
-        <div class="expenseTable">
-            <table>
-                <tr>
+        <div>
+            <table class="expenseTable">
+                <thead>
                     <th>Name</th>
                     <th>Date</th>
                     <th>Amount</th>
-                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>01/01/2000</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Josh</td>
+                        <td>01/01/2000</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Johnathan</td>
+                        <td>01/01/2000</td>
+                        <td>$100</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
