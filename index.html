@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<script src="scripts.js"></script>
-
 <title>Expense Tracker App</title>
 
 <head>
-    <header id="WebsiteTitle">
-        <h1>Expense Tracker</h1>
-    </header>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 
 <body>
-    <div>
-        <div class="inputBlock1">
-            <h2>
-                Add A New Item:
-            </h2>
-            <div>                
-                <!--Where was the expense made?-->
-                Name:
-                <input type="Name" placeholder="Name">
+    <div id="page">
+        <header id="web_header">
+            <h1>Expense Tracker</h1>
+        </header>
+        <div class="container">
+            <div class="container">
+                <h2>Add A New Item:</h2>
+            </div>
+            <div class="container">
+                <div class="container">
+                    <div>                
+                        <input type="Name" placeholder="Name">
+                    </div>
+                </div>
+                <div class="container">
+                    <div>
+                        <input type="date">
+                        <input type="amount" placeholder="$0.00">
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="inputBlock2">
-            Date:
-            <input type="date">
-            Amount:
-            <input type="amount" placeholder="0.00">
+        <div class="container">
+            <button class="button">Add Expense</button>
         </div>
-        <div>
-            <button class="expenseBtn">Add Expense</button>
-        </div>
-        <div>
+        <div class="container">
             <table class="expenseTable">
                 <thead>
                     <th>Name</th>
@@ -62,9 +64,9 @@
             </table>
         </div>
     </div>
-
 </body>
 <footer> 
-
+    <div class="container">
+    </div>
 </footer>
 </html>
