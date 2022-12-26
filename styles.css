@@ -9,6 +9,7 @@ h2 {
     font-weight: 200;
     color: green;
     margin: 0;
+    text-align: center;
 }
 div {
 }
@@ -25,12 +26,21 @@ div {
     text-align: center;
     background-color: rgb(206, 206, 206)
 }
-
-.container{
-    text-align: center;
+#name {
+}
+#date{
+}
+#money{
 }
 
+.container{
+}
+.sub_header{
+
+}
 .button {
+    border-color: lightgoldenrodyellow;
+    background-color: lightblue;
 }
 .expenseTable {
     border: 2px solid black;

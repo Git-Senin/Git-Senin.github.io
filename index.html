@@ -16,55 +16,60 @@
         <header id="web_header">
             <h1>Expense Tracker</h1>
         </header>
-        <div class="container">
+        <div class="sub_header">
             <div class="container">
                 <h2>Add A New Item:</h2>
             </div>
+        </div>
+        <div id="inputs">
             <div class="container">
                 <div class="container">
-                    <div>                
-                        <input type="Name" placeholder="Name">
-                    </div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text">
                 </div>
                 <div class="container">
-                    <div>
-                        <input type="date">
-                        <input type="amount" placeholder="$0.00">
-                    </div>
+                    <label for="date">Date</label>
+                    <input id="date" type="date">
+                    
+                    <label for="price">Price</label>
+                    <input id="price" type="number" placeholder="$0.00">
                 </div>
             </div>
+            <div class="container">
+                <button class="button">Add Expense</button>
+            </div>
         </div>
-        <div class="container">
-            <button class="button">Add Expense</button>
-        </div>
-        <div class="container">
-            <table class="expenseTable">
-                <thead>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Amount</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>01/01/2000</td>
-                        <td>$100</td>
-                    </tr>
-                    <tr>
-                        <td>Josh</td>
-                        <td>01/01/2000</td>
-                        <td>$100</td>
-                    </tr>
-                    <tr>
-                        <td>Johnathan</td>
-                        <td>01/01/2000</td>
-                        <td>$100</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="table">
+            <div class="container">
+                <table class="expenseTable">
+                    <thead>
+                        <th>Name</th>
+                        <th>Date</th>
+                        <th>Amount</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>01/01/2000</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Josh</td>
+                            <td>01/01/2000</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <td>Johnathan</td>
+                            <td>01/01/2000</td>
+                            <td>$100</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
+
 <footer> 
     <div class="container">
     </div>
