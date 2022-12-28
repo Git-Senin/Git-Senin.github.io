@@ -17,30 +17,29 @@
             <h1>Expense Tracker</h1>
         </header>
         <div class="sub_header">
-            <div class="container">
-                <h2>Add A New Item:</h2>
-            </div>
+            <h2>Add A New Item:</h2>
         </div>
         <div id="inputs">
-            <div class="container">
-                <div class="container">
-                    <label for="name">Name</label>
-                    <input id="name" type="text">
+            <div class="wrapper">
+                <div class="container_grid">
+                    <div class="container">
+                        <label for="name">Name</label>
+                        <input id="name" type="text">
+                    </div>
                 </div>
-                <div class="container">
-                    <label for="date">Date</label>
-                    <input id="date" type="date">
-                    
-                    <label for="price">Price</label>
-                    <input id="price" type="number" placeholder="$0.00">
+                <div class="container_grid">
+                    <div class="containter">
+                        <label for="date">Date</label>
+                        <input id="date" type="date">
+                        <label for="price">Price</label>
+                        <input id="price" type="number" placeholder="$0.00">
+                    </div>
                 </div>
             </div>
-            <div class="container">
-                <button class="button">Add Expense</button>
-            </div>
+            <button class="button">Add Expense</button>
         </div>
         <div class="table">
-            <div class="container">
+            <div class="wrapper">
                 <table class="expenseTable">
                     <thead>
                         <th>Name</th>
@@ -71,7 +70,7 @@
 </body>
 
 <footer> 
-    <div class="container">
+    <div class="wrapper">
     </div>
 </footer>
 </html>

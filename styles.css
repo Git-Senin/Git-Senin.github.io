@@ -26,14 +26,23 @@ div {
     text-align: center;
     background-color: rgb(206, 206, 206)
 }
-#name {
+#id input{
+    
 }
-#date{
-}
-#money{
-}
+.wrapper{
 
+}
+.container_grid{
+    display: grid;
+    padding: 10px;
+    background-color: lightpink;
+}
 .container{
+    
+    padding: 10px;
+    margin: 10px;
+    place-content: center;
+    background-color: lightgreen;
 }
 .sub_header{
 
