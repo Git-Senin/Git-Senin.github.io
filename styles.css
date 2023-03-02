@@ -16,7 +16,7 @@ div {
 
 #page{
     width: 100%;
-    height: 2000px;
+    height: 100vw;
 }
 #web_header {
     position: sticky;
@@ -26,33 +26,53 @@ div {
     text-align: center;
     background-color: rgb(206, 206, 206)
 }
+#sub_header{
+
+}
 #id input{
     
 }
 .wrapper{
-
-}
-.container_grid{
-    display: grid;
-    padding: 10px;
-    background-color: lightpink;
-}
-.container{
     
+}
+.container_flexbox{
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10% 15px 10%;
+}
+.flexbox_item{
+    background-color: darksalmon;
     padding: 10px;
-    margin: 10px;
-    place-content: center;
-    background-color: lightgreen;
 }
-.sub_header{
 
-}
 .button {
-    border-color: lightgoldenrodyellow;
-    background-color: lightblue;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.expenseTable {
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
+
+.expense_table {
+    display: grid;
+}
+
+.table_row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.table_row .header{
+    background-color: rgb(214, 162, 94);
+}
+.table_row .content {
+    background-color: rgb(223, 200, 170);
+}
+
+.table_cell {
+    border: 1px solid black;
+    background-color: lightcoral;
+    margin:  10px;
+    justify-content: center;
+    align-items: center;
 }
