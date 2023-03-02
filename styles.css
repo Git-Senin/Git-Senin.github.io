@@ -3,15 +3,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
 }
-h1 {
-}
 h2 {
     font-weight: 200;
     color: green;
     margin: 0;
     text-align: center;
-}
-div {
 }
 
 #page{
@@ -19,28 +15,25 @@ div {
     height: 100vw;
 }
 #web_header {
+    display: flex;
     position: sticky;
+    justify-content: center;
+    align-items: center;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 5%;
+    background-color: rgb(206, 206, 206);
+}
+#web_header h1{
+    font-size: 3vw;
     text-align: center;
-    background-color: rgb(206, 206, 206)
-}
-#sub_header{
-
-}
-#id input{
-    
-}
-.wrapper{
-    
 }
 .container_flexbox{
     background-color: lightskyblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 10% 15px 10%;
+    margin: 15px 10%;
 }
 .flexbox_item{
     background-color: darksalmon;
@@ -56,23 +49,57 @@ div {
 
 .expense_table {
     display: grid;
+    margin: 15px 10%;
+    border: 5px solid lightgrey;
+    border-radius: 3px;
+}
+.table_container{
+    display: grid;
+    gap: 1px;
+}
+.table_container > :first-child{
+    background-color: lightgreen;
 }
 
-.table_row{
+.table_row {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-}
-.table_row .header{
-    background-color: rgb(214, 162, 94);
-}
-.table_row .content {
-    background-color: rgb(223, 200, 170);
+    gap: 1px;
 }
 
 .table_cell {
-    border: 1px solid black;
-    background-color: lightcoral;
-    margin:  10px;
+    display: grid;
     justify-content: center;
     align-items: center;
+
+    outline: 1px solid black;
 }
+
+
+.expense_table2 {
+
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10%;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+.expense_table2 thead{
+    
+}
+.expense_table2 tr{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+}
+.expense_table2 th {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+}
+.expense_table td {
+    border: 1px sold red;
+}
+ 
