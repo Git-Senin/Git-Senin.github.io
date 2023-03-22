@@ -12,7 +12,9 @@
 </head>
 
 <body>
-    <div id="page">
+    <div id="wrapper">
+    
+        <div id="page_background"></div>
 
         <header id="web_header">
             <h1>Expense Tracker</h1>
@@ -26,7 +28,7 @@
             <div class="container_flexbox">
                 <div class="flexbox_item">
                     <label for="name">Name</label>
-                    <input id="name" type="text">
+                    <input id="name" type="text" placeholder="John">
                 </div>
                 <div class="flexbox_item">
                     <label for="date">Date</label>
@@ -34,73 +36,27 @@
                 </div>
                 <div class="flexbox_item">
                     <label for="price">Price</label>
-                    <input id="price" type="number" placeholder="$0.00">
+                    <span class="currency_addon">$</span>
+                    <input id="price" type="number" placeholder="0.00" step="0.01">
                 </div>
             </div>
         </div>
 
-        <div class="button">
+        <div id="add_btn">
             <button>Add Expense</button>
         </div>
+
         <div class="expense_table">
-            <div class="table_container">
-
-                <div class="table_row">
-                    <div class="table_cell">
-                        <label for="name">Name</label>
-                        <button>V</button>
-                    </div>
-                    <div class="table_cell">
-                        <label for="Date">Date</label>
-                        <button>V</button>
-                    </div>
-                    <div class="table_cell">
-                        <label for="price">Price</label>
-                        <button>V</button>
-                    </div>
-                </div>
-                    
-                <div class="table_row">
-                    <div class="table_cell">
-                        <label for="name">John</label>
-                    </div>
-                    <div class="table_cell">
-                        <label for="Date">Date</label>
-                    </div>
-                    <div class="table_cell">
-                        <label for="price">Price</label>
-                    </div>
-                </div>
-                
-                
-            </div>
-
-            
-        </div>
-        <div  class="expense_table2">
             <table>
                 <thead>
                     <tr>
-                        <th>
-                            <label for="name">Name</label>
-                            <button>V</button>
-                        </th>
-                        <th>
-                            <label for="Date">Date</label>
-                            <button>V</button>
-                        </th>
-                        <th>
-                            <label for="price">Price</label>
-                            <button>V</button>
-                        </th>
+                        <th id="name_btn">Name</th>
+                        <th id="date_btn">Date</th>
+                        <th id="price_btn">Price</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>John</td>
-                        <td>01/05/2001</td>
-                        <td>$</td>
-                    </tr>
+                    
                 </tbody>
             </table>
         </div>
@@ -110,8 +66,8 @@
 </body>
 
 <footer> 
-    <div class="wrapper">
-
+    <div id="my_footer">
+        Footer
     </div>
 </footer>
 </html>
