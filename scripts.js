@@ -1,10 +1,6 @@
 
 class user_data
 {    
-    name;
-    date;
-    price;
-
     constructor(name, date, price){
         this.name = name;
         this.date = date;
@@ -174,44 +170,44 @@ function ClearSortToggles(){
 }
 
 function SortNameButton() {
-    if(!table_sorting["name"]) {
+    if(!table_sorting.name) {
         ClearSortToggles();
         SortNamesAscend(); 
-        table_sorting["name"] = true;
+        table_sorting.name = true;
     }
     else {
         ClearSortToggles();
         SortNamesDescend();
-        table_sorting["name"] = false;
+        table_sorting.name = false;
     }
     
     ClearTableRows();
     GetTableRows();
 }
 function SortDateButton(){
-    if(!table_sorting["date"]) {
+    if(!table_sorting.date) {
         ClearSortToggles();
         SortDatesAscend();
-        table_sorting["date"] = true;
+        table_sorting.date = true;
     }
     else {
         ClearSortToggles();
         SortDatesDescend();
-        table_sorting["date"] = false;
+        table_sorting.date = false;
     }
     ClearTableRows();
     GetTableRows();
 }
 function SortPriceButton(){
-    if(!table_sorting["price"]) {
+    if(!table_sorting.price) {
         ClearSortToggles();
         SortPriceAscend();
-        table_sorting["price"] = true;
+        table_sorting.price = true;
     }
     else {
         ClearSortToggles();
         SortPriceDescend();
-        table_sorting["price"] = false;
+        table_sorting.price = false;
     }
     ClearTableRows();
     GetTableRows();
@@ -224,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector("#name_btn").onclick = SortNameButton;
     document.querySelector("#date_btn").onclick = SortDateButton;
     document.querySelector("#price_btn").onclick = SortPriceButton;
-
+    
 })
  
 function consoleLogTable() {
@@ -232,4 +228,14 @@ function consoleLogTable() {
     for(const i in table_data){
         console.log(table_data[i]);
     }
+}
+
+
+var debugN = 1;
+function DebugButton() {
+    for(let i = debugN; i < debugN + 6; i++){
+        table_data.push({name:String.fromCharCode('a'.charCodeAt(0)+i),date:`${2003-i}`,price:1+i});
+        AddTableRow({name:String.fromCharCode('a'.charCodeAt(0)+i),date:`${2003-i}`,price:1+i});
+    }
+    debugN += 6;
 }

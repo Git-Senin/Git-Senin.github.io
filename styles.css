@@ -87,7 +87,7 @@ footer {
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin: 0 15px;
+    margin: 15px;
 }
 #add_btn button{
     font-size: 25px;
@@ -128,7 +128,9 @@ footer {
 
 .expense_table td, 
 .expense_table th{
+    max-width: 0px;
     padding: 10px 15px;
+    overflow: hidden;
 }
 
 .expense_table th{
@@ -142,8 +144,11 @@ footer {
 }
 .expense_table tbody tr {
     border-bottom: 1px solid rgb(88, 88, 88);
+    transition: ;
 }
-
+.expense_table tbody tr:hover{
+    background-color: red;
+}
 .currency_addon {
     display: inline-block;
     position: relative;
